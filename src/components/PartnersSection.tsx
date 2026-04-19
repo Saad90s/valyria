@@ -30,7 +30,7 @@ const PartnersSection = () => {
               // - h-8 md:h-12 w-auto : contrôle la taille tout en gardant les proportions
               // - opacity-40 hover:opacity-100 : effet de survol
               // - grayscale hover:grayscale-0 : (Optionnel) passe l'image en noir et blanc puis en couleur au survol
-              className="h-8 md:h-12 w-auto opacity-40 hover:opacity-100 transition-all duration-500 select-none grayscale hover:grayscale-0"
+              className="h-24 md:h-24 w-auto opacity-40 hover:opacity-100 transition-all duration-500 select-none grayscale hover:grayscale-0"
             />
           ))}
         </div>

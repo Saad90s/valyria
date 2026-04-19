@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Star } from "lucide-react"; // L'icône 'Play' a été retirée car la vidéo a ses propres contrôles
+import { Star } from "lucide-react";
 
 const reviews = [
   {
@@ -38,19 +38,25 @@ const ReviewsSection = () => {
           </h2>
         </motion.div>
 
-        {/* Section vidéo intégrée */}
+        {/* --- SECTION VIDÉO (REEL FORMAT) --- */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20, scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto mb-16"
+          transition={{ duration: 0.6 }}
+          // Sgherna l-3erd hna bach yji b7al téléphone (max-w-[360px])
+          className="max-w-[360px] mx-auto mb-20 relative group" 
         >
-          <div className="aspect-video bg-card border border-primary/20 rounded-lg relative overflow-hidden shadow-lg">
+          {/* Glow wara l-vidéo bach tban premium */}
+          <div className="absolute -inset-4 bg-primary/20 rounded-[2.5rem] blur-2xl opacity-50 transition-opacity duration-500 group-hover:opacity-100 -z-10" />
+          
+          {/* Aspect 9/16 dyal les Reels + zedt rounded-2xl bach tban b7al écran dyal tel */}
+          <div className="aspect-[9/16] bg-black border border-primary/20 rounded-2xl relative overflow-hidden shadow-2xl">
             <video
-              // Beddel object-cover b object-contain hna
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover" // object-cover bach t3mer l-cadre
               controls
               preload="metadata"
+              playsInline // Hadi mzyana l les iphones
             >
               <source src="/assets/recommandation1.MP4" type="video/mp4" />
             </video>

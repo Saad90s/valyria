@@ -18,7 +18,7 @@ const services = [
   },
 ];
 
-const ServicesSection = () => {
+const Services = () => {
   return (
     <section className="py-24" id="services">
       <div className="container">
@@ -65,4 +65,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default Services;

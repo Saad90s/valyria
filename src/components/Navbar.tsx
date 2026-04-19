@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import logo from "/assets/logo.png";
 
 const navLinks = [
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -32,19 +32,18 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-[60] transition-all duration-500 ease-in-out ${
-          scrolled && !open
+        className={`fixed top-0 left-0 w-full z-[60] transition-all duration-500 ease-in-out ${scrolled && !open
             ? "bg-zinc-950/80 backdrop-blur-lg border-b border-white/5 py-2"
             : "bg-transparent py-4"
-        }`}
+          }`}
       >
         <div className="container mx-auto px-6 flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center group relative z-[60]">
-            <img 
-              src={logo} 
-              alt="The Valyria Agency" 
-              className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-105" 
+          <a href="/" className="flex items-center group relative z-[60]">
+            <img
+              src={logo}
+              alt="The Valyria Agency"
+              className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:scale-105"
             />
           </a>
 
@@ -56,17 +55,17 @@ const Navbar = () => {
           >
             {/* Ligne du haut */}
             <motion.span
-              animate={{ 
-                rotate: open ? 45 : 0, 
-                y: open ? 3 : -3 
+              animate={{
+                rotate: open ? 45 : 0,
+                y: open ? 3 : -3
               }}
               className="block w-6 h-[2px] bg-amber-400 absolute"
             />
             {/* Ligne du bas */}
             <motion.span
-              animate={{ 
-                rotate: open ? -45 : 0, 
-                y: open ? -3 : 3 
+              animate={{
+                rotate: open ? -45 : 0,
+                y: open ? -3 : 3
               }}
               className="block w-6 h-[2px] bg-amber-400 absolute"
             />
@@ -91,10 +90,10 @@ const Navbar = () => {
                     initial={{ y: "100%", opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: "100%", opacity: 0 }}
-                    transition={{ 
-                      delay: i * 0.1 + 0.3, 
-                      duration: 0.5, 
-                      ease: [0.22, 1, 0.36, 1] 
+                    transition={{
+                      delay: i * 0.1 + 0.3,
+                      duration: 0.5,
+                      ease: [0.22, 1, 0.36, 1]
                     }}
                     href={link.href}
                     onClick={() => setOpen(false)}
@@ -107,9 +106,9 @@ const Navbar = () => {
                 </div>
               ))}
             </div>
-            
+
             {/* Petit texte ou footer en bas du menu */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.5 }}

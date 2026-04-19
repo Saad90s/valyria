@@ -1,25 +1,20 @@
-import Navbar from "@/components/Navbar";
+// 7iyed Navbar w Footer mn les imports 7it homa f App daba
 import HeroSection from "@/components/HeroSection";
 import ReviewsSection from "@/components/ReviewsSection";
-import AboutSection from "@/components/AboutSection";
 import WorkSection from "@/components/WorkSection";
 import PartnersSection from "@/components/PartnersSection";
-import ServicesSection from "@/components/ServicesSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    // 7iyedna min-h-screen 7it drnaha f App.tsx
+    <div>
       <HeroSection />
       <ReviewsSection />
       {/* <AboutSection /> */}
       <WorkSection />
       <PartnersSection />
-      <ServicesSection />
-      <ContactSection />
-      <Footer />
+      {/* <ServicesSection /> */}
+      {/* <ContactSection /> */}
     </div>
   );
 };
