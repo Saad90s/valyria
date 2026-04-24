@@ -3,21 +3,21 @@ import { Star } from "lucide-react";
 
 const reviews = [
   {
-    name: "Ahmed B.",
-    company: "Marque E-commerce",
-    text: "Valyria a transformé notre présence en ligne. Notre chiffre d'affaires a triplé en seulement 4 mois.",
+    name: "Hamid",
+    company: "Société de solaire",
+    text: "Valyria a transformé notre présence en ligne, notre chiffre d'affaires a triplé en très peu de temps.",
     rating: 5,
   },
   {
-    name: "Sara K.",
-    company: "Startup SaaS",
-    text: "La meilleure agence avec laquelle nous avons travaillé. Professionnelle, créative et axée sur les résultats.",
+    name: "Mohamed",
+    company: "E-commerce Brand",
+    text: "Professionnel, créatif et axé sur les résultats.",
     rating: 5,
   },
   {
-    name: "Youssef M.",
-    company: "Immobilier",
-    text: "Leurs services de conseil nous ont aidés à restructurer l'intégralité de notre stratégie de mise sur le marché.",
+    name: "Khalil",
+    company: "Société d’aménagement",
+    text: "Leurs services de conseil nous ont aidés à restructurer l'intégralité de notre stratégie.",
     rating: 5,
   },
 ];
