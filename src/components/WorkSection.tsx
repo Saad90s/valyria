@@ -6,7 +6,7 @@ import societeImg from "/assets/societe amenagement.jpeg";
 const projects = [
   {
     id: 1,
-    hoverName: "chams", // <-- Zedt hadi hna
+    hoverName: "chams", 
     tag: "Energy Solutions",
     title: "How Chams Turned Strategy <span class='text-gold-gradient'>Into Sales example</span>",
     description: "Chams’s campaign began with a clear, audience-focused idea. We turned it into a structured strategy with targeted messaging and a high-converting funnel. The result: qualified leads and measurable growth.",
@@ -18,20 +18,20 @@ const projects = [
   },
   {
     id: 2,
-    hoverName: "expoluxe", // <-- W hadi hna
+    hoverName: "expoluxe", 
     tag: "Home Improvement ",
     title: "Expoluxe Partnership: <span class='text-gold-gradient'>From Vision to Results</span>",
     description: "Our partnership with Expoluxe began with a clear vision of modern, aesthetic living spaces. We transformed it into a targeted strategy using refined visuals ",
-    image: ecommerceImg,
+    image: societeImg,
     stats: [],
   },
   {
     id: 3,
-    hoverName: "chams", // <-- W hadi hna
+    hoverName: "chams", 
     tag: "Industrial Energy",
     title: "Transform Every Inch Into <span class='text-gold-gradient'>Performance</span>",
     description: "An empty roof is a missed opportunity. Chams specializes in turning industrial rooftops into high-yield solar powerhouses, maximizing your ROI and energy independence.",
-    image: societeImg,
+    image: ecommerceImg,
     stats: [
       { value: "Industrial", label: "Solutions" },
       { value: "High", label: "Efficiency" },
